@@ -5,8 +5,7 @@ test("One euro should be 1.07 dollars", function() {
 
 test("Conversion from USD to JPY (1 USD = 149.03 JPY)", function() {
     const { fromDollarToYen } = require('./app.js')
-    expect(fromDollarToYen(10)).toBeCloseTo(1490);
-})
+    expect(fromDollarToYen(10)).toBeCloseTo(1490.3);})
 
 test("Conversion from JPY to GBP (1 JPY = 0.0072 GBP)", function() {
     const { fromYenToPound } = require('./app.js')
